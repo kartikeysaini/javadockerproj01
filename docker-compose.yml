@@ -31,7 +31,7 @@ services:
     image: kartikeysaini/javaproj01server
     container_name: vproapp
     ports:
-      - "8081:8081"
+      - "8080:8080"
     volumes:
       - vproappdata:/usr/local/tomcat/webapps
 
@@ -41,7 +41,7 @@ services:
     image: kartikeysaini/javaproj01fed
     container_name: vproweb
     ports:
-      - "3002:80"
+      - "80:80"
     
 
 volumes:
